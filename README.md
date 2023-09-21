@@ -27,7 +27,7 @@
 
 # 📖📖 Blog app - processing data in models <a name="about-project"></a>
 
-**In this project, I will set up the models - **
+**In this project, I will set up the models for or Users, Posts, Comments, and Likes.**
 
 
 

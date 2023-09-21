@@ -86,10 +86,10 @@ Clone this repository to your desired folder:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Kgomotso196/Decode-Morse-Message.git
+$ git clone https://github.com/Kgomotso196/blog-app.git
 
 # Go into the repository
-$ cd Decode-Morse-Message
+$ cd blog-app
 
 # Install dependencies
 $ bundle install
@@ -98,7 +98,7 @@ $ bundle install
 
 ### Usage
 
-After you clone this repo to your desktop and install the dependencies, go to its root directory and run `ruby decode_morse_code.rb` to run the application.
+After you clone this repo to your desktop and install the dependencies, go to its root directory and run `ruby  rails ` to run the application.
 
 
 
@@ -133,7 +133,7 @@ After you clone this repo to your desktop and install the dependencies, go to it
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Kgomotso196/Decode-Morse-Message/issues).
+Feel free to check the [issues page](https://github.com/Kgomotso196/blog-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -98,7 +98,7 @@ $ bundle install
 
 ### Usage
 
-After you clone this repo to your desktop and install the dependencies, go to its root directory and run `ruby  rails ` to run the application.
+After you clone this repo to your desktop and install the dependencies, go to its root directory and run `rails s ` to run the application.
 
 
 

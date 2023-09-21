@@ -86,7 +86,7 @@ Clone this repository to your desired folder:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Kgomotso196/blog-app.git
+$ git clone https://github.com/yemidada/blog-app.git
 
 # Go into the repository
 $ cd blog-app
@@ -105,7 +105,7 @@ After you clone this repo to your desktop and install the dependencies, go to it
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 
 👤 **Author**
@@ -128,7 +128,7 @@ After you clone this repo to your desktop and install the dependencies, go to it
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Kgomotso196/blog-app/issues).
+Feel free to check the [issues page](https://github.com/yemidada/blog-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

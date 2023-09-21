@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖Blog app - creating a data model </b></h3>
+  <h3><b>📖Blog app - processing data in models</b></h3>
 
 </div>
 
@@ -25,9 +25,9 @@
 - [📝 License](#license)
 
 
-# 📖📖 Blog app - creating a data model  <a name="about-project"></a>
+# 📖📖 Blog app - processing data in models <a name="about-project"></a>
 
-**In this project, you will use migration files to build your schema.**
+**In this project, I will set up the models - **
 
 
 

@@ -46,9 +46,9 @@ The various stacks used for the project includes the following
 ### Key Features <a name="key-features"></a>
 
 
-- **RUse Ruby Gems as a software packages system.**
-- **RUnderstand what ORM is.**
-- **RUse database migration files to maintain database schema.**
+- **Use Ruby Gems as a software packages system.**
+- **Understand what ORM is.**
+- **Use database migration files to maintain database schema.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

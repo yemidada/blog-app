@@ -114,11 +114,6 @@ After you clone this repo to your desktop and install the dependencies, go to it
 - Twitter: [@nairareport](https://twitter.com/nairareport)
 - LinkedIn: [yemidada](https://linkedin.com/in/yemidada)
 
-👤 **Kgomotso (Troos) Nacane**
-- GitHub: [Troos](https://github.com/Kgomotso196)
-- Twitter: [Troos](https://twitter.com/t_r_o_o_s)
-- LinkedIn: [Troos](https://linkedin.com/in/kgomotso-nacane)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

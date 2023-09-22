@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖Blog app - processing data in models</b></h3>
+  <h3><b>📖Blog App: validations and model specs</b></h3>
 
 </div>
 
@@ -25,9 +25,9 @@
 - [📝 License](#license)
 
 
-# 📖📖 Blog app - processing data in models <a name="about-project"></a>
+# 📖📖 Blog App: validations and model specs<a name="about-project"></a>
 
-**In this project, I will set up the models for or Users, Posts, Comments, and Likes.**
+**In this project, you will add validations to your models and create specs for them.**
 
 
 

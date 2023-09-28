@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖 Blog app - controllers </b></h3>
+  <h3><b>📖 Blog app - controllers specs </b></h3>
 
 </div>
 
@@ -24,10 +24,11 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
+Blog app - controllers specs <a name="about-project"></a>
 
-# 📖📖  Blog app - controllers <a name="about-project"></a>
-
-**In this project, you will add validations to your models and create specs for them.**
+**Use controllers to handle requests and render empty views.**
+**Understand Rails naming conventions.**
+**Use params from browser requests in a safe way.**
 
 
 

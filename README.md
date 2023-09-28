@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖Blog App: validations and model specs</b></h3>
+  <h3><b>📖 Blog app - controllers </b></h3>
 
 </div>
 
@@ -25,7 +25,7 @@
 - [📝 License](#license)
 
 
-# 📖📖 Blog App: validations and model specs<a name="about-project"></a>
+# 📖📖  Blog app - controllers <a name="about-project"></a>
 
 **In this project, you will add validations to your models and create specs for them.**
 

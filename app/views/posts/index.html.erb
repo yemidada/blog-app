@@ -1,2 +1,42 @@
-<h1>Posts List</h1>
-<p>List of posts for a given user</p>
+<main class="card">
+      <div class="card-content">
+            <div class="user-image border"></div>
+            <div class="user-data border full-width">
+              <h1><%= @user.name %></h1>
+              <p class="number-posts">Number of posts: <%= @user.posts_counter %></p>
+            </div>
+        </div>
+
+    <ul>
+      <% @posts.each do |post| %>
+        <%= link_to controller: 'posts', action: 'show', user_id: post.author_id, id: post.id do %>
+          <li>
+            
+
+            <div class="border comment my-2">
+            <h5>
+              <%= post.title%>
+            </h5>
+            <h6>
+              <%= post.text%>
+            </h6>
+            <div class="right">
+              <span>Comments: <%= post.comments_counter %></span>
+              <span class="left">Likes: <%= post.likes_counter %> </span>
+            </div>
+          </div>
+
+             <div class="border comment my-2">
+              <h4>Comments:</h4>
+              <ul>
+                <% post.recent_comments.each do |comment| %>
+                  <p><%= comment.users.name %>: <%= comment.text %></p>
+                <% end %>
+              </ul>
+            </div>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+
+</main>

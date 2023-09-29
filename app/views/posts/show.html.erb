@@ -1,2 +1,16 @@
-<h1>Post</h1>
-<p>Details of a post for a given user</p>
+<main class="card">
+
+    <div class="border comment mb-2">
+      <h4><%= @post.title %></h4>
+      <p><%= @post.text %></p>
+    </div>
+    <div class="border comment">
+      <h5>Comments:</h5>
+      <ul>
+        <% @post.comments.each do |comment| %>
+          <p><%= comment.users.name %>: <%= comment.text %></p>
+        <% end %>
+      </ul>
+    </div>
+
+</main>

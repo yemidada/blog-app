@@ -1,2 +1,19 @@
-<h1>Users List</h1>
-<p>List of all usres</p>
+<main>
+  <section>
+    <ul>
+      <% @users.each do |user|%>
+        <%= link_to controller: 'users', action: 'show', id: user.id do %>
+          <li class="card ">
+            <div class="card-content">
+            <div class="user-image border"></div>
+            <div class="user-data border full-width">
+              <h1><%= user.name %></h1>
+              <p class="number-posts">Number of posts: <%= user.posts_counter %></p>
+            </div>
+            </div>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>  
+  </section>
+</main>

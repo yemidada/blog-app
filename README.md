@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖 Blog app - controllers specs </b></h3>
+  <h3><b>📖 Blog app - Views </b></h3>
 
 </div>
 
@@ -24,13 +24,11 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-Blog app - controllers specs <a name="about-project"></a>
-
-**Use controllers to handle requests and render empty views.**
-**Understand Rails naming conventions.**
-**Use params from browser requests in a safe way.**
+Blog app - Views <a name="about-project"></a>
 
 
+**Use preprocessed HTML file with embedded Ruby code.**
+**Use layouts and templates for shared content.**
 
 ## 🛠 Built With <a name="built-with"></a>
 

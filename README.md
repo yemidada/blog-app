@@ -24,11 +24,11 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-Blog app - Views <a name="about-project"></a>
-
+# 📖Blog app - Views  <a name="about-project"></a>
 
 **Use preprocessed HTML file with embedded Ruby code.**
 **Use layouts and templates for shared content.**
+
 
 ## 🛠 Built With <a name="built-with"></a>
 

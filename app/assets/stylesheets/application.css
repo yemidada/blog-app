@@ -25,27 +25,27 @@ ul {
 
 a {
   color: #fff !important;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .card {
-  margin:0 auto;
+  margin: 0 auto;
   width: 860px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   border: none;
   background: transparent;
   color: #fff;
 }
 
-.border{
+.border {
   border: 3px solid #eee;
   border-radius: 10px;
 }
 
-.card-content{
+.card-content {
   display: inline-flex;
   justify-content: start;
-  align-items: center;    
+  align-items: center;
   gap: 10px;
 }
 
@@ -58,19 +58,19 @@ a {
   height: 100px;
 }
 
- .user-data {
+.user-data {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  padding: 19px 16px ;
+  padding: 19px 16px;
 }
 
-.bio{
+.bio {
   padding: 5px;
   margin: 10px 0;
 }
 
-.comment{
+.comment {
   padding: 5px;
 }
 

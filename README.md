@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖 Blog app - Views </b></h3>
+  <h3><b>📖 Blog app - Add forms </b></h3>
 
 </div>
 
@@ -24,10 +24,11 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖Blog app - Views  <a name="about-project"></a>
+# 📖Blog app - Add forms  <a name="about-project"></a>
 
 **Use preprocessed HTML file with embedded Ruby code.**
 **Use layouts and templates for shared content.**
+
 
 
 ## 🛠 Built With <a name="built-with"></a>

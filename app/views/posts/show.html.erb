@@ -1,16 +1,23 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div>
-                <h3>Post #1 by username</h3>
-                 <div>
-                    <span>Comments: X,</span></span>Like y</span>
-                </div>
-            </div>
-            
-            <p>We dsds ms dsmd smd smd ms dms dms dms dms dms dms dms dms dms dms dms d</p>
+<main class="card">
 
-           
-        </div>
+    <div class="border comment mb-2">
+      <h4><%= @post.title %></h4>
+      <p><%= @post.text %></p>
     </div>
-</div>
+
+    <div class="button_field mb-3 d-flex justify-content-between">
+        <%= link_to "Comment", new_user_post_comment_path(user_id: @post.author_id, post_id: @post.id ), class: "btn" %>
+        <%= form_with model: @like, url: user_post_likes_path(post_id: @post.id) do |form| %>
+          <%= form.submit "Like", class: "btn" %>
+        <% end %>
+      </div>
+    <div class="border comment">
+      <h5>Comments:</h5>
+      <ul>
+        <% @post.comments.each do |comment| %>
+          <p><%= comment.users.name %>: <%= comment.text %></p>
+        <% end %>
+      </ul>
+    </div>
+
+</main>

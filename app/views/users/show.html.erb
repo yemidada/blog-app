@@ -1,55 +1,50 @@
-<div class="container">
-    <div class="row">
+<main class="card">
+  <div class="card-content">
+    <img class="user-image border" src="<%= @user.photo %>" alt="image" />
+    <div class="user-data border full-width">
+      <h1>
+        <%= @user.name %>
+      </h1>
+      <p class="number-posts">Number of posts: <%= @user.posts_counter %>
+      </p>
+    </div>
+  </div>
 
-        <div class="col-md-12 d-flex ">
 
-            <img src="" height="50">
+  <div class="bio border">
 
-            <div class="">
+    <h5>Bio:</h5>
+    <p>
+      <%= @user.bio %>
+    </p>
 
-                <h3>My name</h3>
+  </div>
 
-                <span>Number of post: 0</span>
+  <div>
+    <ul>
 
+      <% @user.recent_posts.each do |post| %>
+        <%= link_to controller: 'posts' , action: 'show' , user_id: @user.id, id: post.id do %>
+          <li class="border comment">
+            <h5>
+              <%= post.title%>
+            </h5>
+            <h6>
+              <%= post.text%>
+            </h6>
+            <div class="right">
+              <span>Comments: <%= post.comments_counter %></span>
+              <span class="left">Likes: <%= post.likes_counter %> </span>
             </div>
-
-        </div>
-
+          </li>
+          <% end %>
+       <% end %>
+    </ul>
+    <div class="full-width d-flex justify-content-center">
+      <div class="btn">
+        <%= link_to "See all posts" , controller: 'posts' , action: 'index' , user_id: @user.id %>
+      </div>
     </div>
 
-
-    <div class="row">
-
-        <div class="col-md-12">
-            <h3>Bio</h3>
-            <p>We dsds ms dsmd smd smd ms dms dms dms dms dms dms dms dms dms dms dms d</p>
-        </div>
-
-
-                <div class="col-md-12">
-            <h3>Bio</h3>
-            <p>We dsds ms dsmd smd smd ms dms dms dms dms dms dms dms dms dms dms dms d</p>
-        </div>
-
-                <div class="col-md-12">
-            <h3>Bio</h3>
-            <p>We dsds ms dsmd smd smd ms dms dms dms dms dms dms dms dms dms dms dms d</p>
-        </div>
-
-                <div class="col-md-12">
-            <h3>Bio</h3>
-            <p>We dsds ms dsmd smd smd ms dms dms dms dms dms dms dms dms dms dms dms d</p>
-        </div>
-
-                <div class="col-md-12">
-            <h3>Bio</h3>
-            <p>We dsds ms dsmd smd smd ms dms dms dms dms dms dms dms dms dms dms dms d</p>
-        </div>
-
-    </div>
-
-    <div>
-        <Button class="btn btn-primary"></Button>
-    </div>
-
-</div>
+  </div>
+</main>

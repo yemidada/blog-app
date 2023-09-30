@@ -2,10 +2,11 @@ class PostsController < ApplicationController
   layout 'application'
 
   def index
-    # Code for the index method
+    @user = User.find(params[:user_id])
+    @posts = @user.posts
   end
 
   def show
-    # Code for the show method
+    @post = Post.find(params[:id])
   end
 end

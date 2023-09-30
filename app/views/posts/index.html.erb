@@ -1,30 +1,42 @@
-<div class="container">
-    <div class="row">
-
-        <div class="col-md-12 d-flex ">
-
-            <img src="" height="50">
-
-            <div class="">
-
-                <h3>My name</h3>
-
-                <span>Number of post: 0</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <h3>Bio</h3>
-            <p>We dsds ms dsmd smd smd ms dms dms dms dms dms dms dms dms dms dms dms d</p>
-
-            <div>
-                <span>Comments: X,</span></span>Like y</span>
+<main class="card">
+      <div class="card-content">
+            <img class="user-image border" src="<%= @user.photo %>" alt="image" />
+            <div class="user-data border full-width">
+              <h1><%= @user.name %></h1>
+              <p class="number-posts">Number of posts: <%= @user.posts_counter %></p>
             </div>
         </div>
-    </div>
-</div>
+
+    <ul>
+      <% @posts.each do |post| %>
+        <%= link_to controller: 'posts', action: 'show', user_id: post.author_id, id: post.id do %>
+          <li>
+            
+
+            <div class="border comment my-2">
+            <h5>
+              <%= post.title%>
+            </h5>
+            <h6>
+              <%= post.text%>
+            </h6>
+            <div class="right">
+              <span>Comments: <%= post.comments_counter %></span>
+              <span class="left">Likes: <%= post.likes_counter %> </span>
+            </div>
+          </div>
+
+             <div class="border comment my-2">
+              <h4>Comments:</h4>
+              <ul>
+                <% post.recent_comments.each do |comment| %>
+                  <p><%= comment.users.name %>: <%= comment.text %></p>
+                <% end %>
+              </ul>
+            </div>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+
+</main>

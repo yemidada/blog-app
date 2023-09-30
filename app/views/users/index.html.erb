@@ -1,19 +1,19 @@
-<div class="container">
-    <div class="row">
-
-        <div class="col-md-12 d-flex ">
-
-            <img src="" height="50">
-
-            <div class="">
-
-                <h3>My name</h3>
-
-                <span>Number of post: 0</span>
-
+<main>
+  <section>
+    <ul>
+      <% @users.each do |user|%>
+        <%= link_to controller: 'users', action: 'show', id: user.id do %>
+          <li class="card ">
+            <div class="card-content">
+            <img class="user-image border" src="<%= user.photo %>" alt="image" />
+            <div class="user-data border full-width">
+              <h1><%= user.name %></h1>
+              <p class="number-posts">Number of posts: <%= user.posts_counter %></p>
             </div>
-
-        </div>
-
-    </div>
-</div>
+            </div>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>  
+  </section>
+</main>

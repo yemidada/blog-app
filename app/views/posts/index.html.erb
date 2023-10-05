@@ -11,8 +11,9 @@
         </div>
 
     <ul>
-      <% @posts.each do |post| %>
-        <%= link_to controller: 'posts', action: 'show', user_id: post.author_id, id: post.id do %>
+      <% unless @posts.empty? %>
+        <% @posts.includes(:comments).each do |post| %>
+          <%= link_to controller: 'posts', action: 'show', user_id: post.author_id, id: post.id do %>
           <li>
             
 
@@ -40,6 +41,9 @@
           </li>
         <% end %>
       <% end %>
+        <% else %>
+    <li>This user has no post yet.</li>
+    <% end %>
     </ul>
-
+<button>Pagination</button>
 </main>

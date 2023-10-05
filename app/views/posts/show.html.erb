@@ -1,8 +1,12 @@
 <main class="card">
 
     <div class="border comment mb-2">
-      <h4><%= @post.title %></h4>
+
+     <h4>"<%= @post.title %>" by <%= @post.author.name %></h4>
+
       <p><%= @post.text %></p>
+
+      <p class="text-right">Comments: <%= @post.comments_counter %>,Likes: <%= @post.likes_counter %></p>
     </div>
 
     <div class="button_field mb-3 d-flex justify-content-between">

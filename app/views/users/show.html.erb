@@ -25,7 +25,7 @@
 
       <% @user.recent_posts.each do |post| %>
         <%= link_to controller: 'posts' , action: 'show' , user_id: @user.id, id: post.id do %>
-          <li class="border comment">
+          <li class="border comment post">
             <h5>
               <%= post.title%>
             </h5>
@@ -41,9 +41,12 @@
        <% end %>
     </ul>
     <div class="full-width d-flex justify-content-center">
+    
       <div class="btn">
-        <%= link_to "See all posts" , controller: 'posts' , action: 'index' , user_id: @user.id %>
+      <a href="<%= user_posts_path(@user) %>" class="border p-1" id="all-posts-btn">See all posts</a>
+  
       </div>
+      
     </div>
 
   </div>

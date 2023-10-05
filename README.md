@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖 Blog app - Add forms </b></h3>
+  <h3><b>📖 Blog app - integration specs for views and fix n+1 problems </b></h3>
 
 </div>
 
@@ -24,10 +24,10 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖Blog app - Add forms  <a name="about-project"></a>
+# 📖Blog app - integration specs for views and fix n+1 problems <a name="about-project"></a>
 
-**Use preprocessed HTML file with embedded Ruby code.**
-**Use layouts and templates for shared content.**
+**Write integration tests with Capybara gem.** 
+**Secure app from n+1 problems.**
 
 
 

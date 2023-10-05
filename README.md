@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖 Blog app - controllers </b></h3>
+  <h3><b>📖 Blog app - integration specs for views and fix n+1 problems </b></h3>
 
 </div>
 
@@ -24,10 +24,10 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
+# 📖Blog app - integration specs for views and fix n+1 problems <a name="about-project"></a>
 
-# 📖📖  Blog app - controllers <a name="about-project"></a>
-
-**In this project, you will add validations to your models and create specs for them.**
+**Write integration tests with Capybara gem.** 
+**Secure app from n+1 problems.**
 
 
 

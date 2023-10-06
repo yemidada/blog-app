@@ -6841,3 +6841,165 @@ Migrating to UpdatePostCountInUsers (20231006131904)
   [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6338344732036984485)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (10.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-10-06 15:21:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (16.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 2067)
+  Rendered layout layouts/application.html.erb (Duration: 563.4ms | Allocations: 35083)
+Completed 200 OK in 667ms (Views: 572.8ms | ActiveRecord: 35.3ms | Allocations: 50521)
+
+
+Started GET "/dsd@dssd.com" for 127.0.0.1 at 2023-10-06 15:21:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dsd@dssd.com"):
+  
+Started GET "/users/" for 127.0.0.1 at 2023-10-06 15:22:12 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 814)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2971)
+Completed 200 OK in 69ms (Views: 57.9ms | ActiveRecord: 2.4ms | Allocations: 4527)
+
+
+Started GET "/users/dsd@dssd.com" for 127.0.0.1 at 2023-10-06 15:22:13 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"dsd@dssd"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+Completed 404 Not Found in 13ms (ActiveRecord: 1.0ms | Allocations: 2865)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=dsd@dssd):
+  
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/login" for 127.0.0.1 at 2023-10-06 15:22:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"login"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+Completed 404 Not Found in 34ms (ActiveRecord: 4.0ms | Allocations: 2284)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=login):
+  
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/login" for 127.0.0.1 at 2023-10-06 15:22:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-10-06 15:22:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 1946ms (ActiveRecord: 6.2ms | Allocations: 1970)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-06 15:22:58 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 814)
+  Rendered layout layouts/application.html.erb (Duration: 165.5ms | Allocations: 2978)
+Completed 200 OK in 189ms (Views: 157.8ms | ActiveRecord: 14.1ms | Allocations: 4568)
+
+
+Started GET "/dsd@dssd.com" for 127.0.0.1 at 2023-10-06 15:22:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dsd@dssd.com"):
+  
+Started GET "/users/logout" for 127.0.0.1 at 2023-10-06 15:23:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"logout"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+Completed 404 Not Found in 19ms (ActiveRecord: 7.4ms | Allocations: 2299)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=logout):
+  
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-10-06 15:23:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+Completed 404 Not Found in 13ms (ActiveRecord: 1.7ms | Allocations: 2289)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-10-06 15:23:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.9ms | Allocations: 716)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 53.9ms | Allocations: 3429)
+  Rendered layout layouts/application.html.erb (Duration: 107.3ms | Allocations: 5656)
+Completed 200 OK in 230ms (Views: 122.4ms | ActiveRecord: 0.0ms | Allocations: 14979)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-10-06 15:23:55 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.0ms | Allocations: 234)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 156)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.5ms | Allocations: 2980)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 5206)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 6322)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-10-06 15:24:11 +0100
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"dddd", "photo"=>"dddd", "email"=>"dd@www.www", "bio"=>"32323", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x0000000112f414c0>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"dddd", "photo"=>"dddd", "email"=>"dd@www.www", "bio"=>"32323", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (11.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dd@www.www"], ["LIMIT", 1]]
+  [1m[36mUser Create (10.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "dddd"], ["photo", "dddd"], ["bio", "32323"], ["posts_counter", 0], ["created_at", "2023-10-06 14:24:11.721387"], ["updated_at", "2023-10-06 14:24:11.721387"], ["email", "dd@www.www"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 471ms (ActiveRecord: 24.2ms | Allocations: 8652)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-06 15:24:11 +0100
+Processing by UsersController#index as TURBO_STREAM
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 923)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3047)
+Completed 200 OK in 18ms (Views: 11.6ms | ActiveRecord: 1.0ms | Allocations: 4702)
+
+
+Started GET "/dsd@dssd.com" for 127.0.0.1 at 2023-10-06 15:24:12 +0100
+Started GET "/dddd" for 127.0.0.1 at 2023-10-06 15:24:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dsd@dssd.com"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dddd"):
+  

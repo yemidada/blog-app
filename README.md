@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>📖 Blog app - controllers </b></h3>
+  <h3><b>📖 Blog app - Add Device </b></h3>
 
 </div>
 
@@ -24,10 +24,10 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
+# 📖Blog app - Add Device  <a name="about-project"></a>
 
-# 📖📖  Blog app - controllers <a name="about-project"></a>
-
-**In this project, you will add validations to your models and create specs for them.**
+**Build a web app that requires the user to log in.**
+**Use devise gem for authentication.**
 
 
 

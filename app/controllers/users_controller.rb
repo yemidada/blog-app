@@ -2,10 +2,10 @@ class UsersController < ApplicationController
   layout 'application'
 
   def index
-    # Code for the index method
+    @users = User.all
   end
 
   def show
-    # Code for the show method
+    @user = User.find(params[:id])
   end
 end
